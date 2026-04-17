@@ -28,9 +28,7 @@ func homeDir() string {
 }
 
 func main() {
-	if flag.Parse(); !flag.Parsed() {
-		log.Fatalf("Error parsing flags")
-	}
+	flag.Parse()
 
 	if *group == "" {
 		log.Fatalf("Please specify the name of the autoscale group using the -group flag")
