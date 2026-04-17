@@ -34,7 +34,7 @@ func main() {
 		log.Fatalf("Please specify the name of the autoscale group using the -group flag")
 	}
 
-	ctx := context.TODO()
+	ctx := context.Background()
 
 	// Load the Shared AWS Configuration (~/.aws/config)
 	var loadOptions []func(*config.LoadOptions) error
