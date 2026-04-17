@@ -1,12 +1,16 @@
-GOPATH=$(shell pwd)/gopath/
+.PHONY: all build run get clean
 
 all: build
 
 run:
-	GOPATH=${GOPATH} go run *.go
+	go run main.go
 
 build:
-	GOPATH=${GOPATH} go build
+	go build -o startAutoscale
 
 get:
-	GOPATH=${GOPATH} go get -u      "github.com/aws/aws-sdk-go"
+	go mod tidy
+	go mod download
+
+clean:
+	rm -f startAutoscale
