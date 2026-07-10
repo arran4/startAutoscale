@@ -4,6 +4,16 @@ A simple utility to update an AWS Auto Scaling Group's capacity to 1 (both min, 
 
 ## Install
 
+### GitHub Releases
+Download binaries from: https://github.com/arran4/startAutoscale/releases
+
+### Go install
+```sh
+go install github.com/arran4/startAutoscale@latest
+```
+
+### From source
+
 Make sure you have Go installed, then clone the repository and build:
 
 ```sh
