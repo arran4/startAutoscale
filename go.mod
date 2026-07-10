@@ -1,4 +1,4 @@
-module startAutoscale
+module github.com/arran4/startAutoscale
 
 go 1.24.3
 
